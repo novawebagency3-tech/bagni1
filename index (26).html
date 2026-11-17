@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https:; style-src 'sha256-CAH2soK/5kcfVDo/DoNC13sP2gYwsWX4dPtxN7EPI0M='; script-src 'sha256-df2JgIs1Vkwhnh0iTe/fiqJ3lMGYFkGVT2I2yNceVNU='; frame-src https://www.google.com; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Bagni La Baia – Stabilimento balneare e ristorantino a Fano (PU)</title>
+<meta name="description" content="Bagni La Baia a Fano: spiaggia attrezzata, gazebo con tende bianche, ristorantino di pesce vista mare e aperitivi al tramonto. Aperti tutti i giorni 08:00–20:00. Prenota su WhatsApp.">
+<meta name="theme-color" content="#0B3B60">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%85%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --sand:#FAF8F5; --sea-light:#F0F7FA; --sunset:#0F1E2E;
+  --blue:#0B3B60; --gold:#D97706; --turq:#0284C7;
+  --ink:#1c2a38; --muted:#52657a; --line:#e3e8ec;
+  --radius:18px; --shadow:0 10px 30px rgba(11,59,96,.12);
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--sand);line-height:1.6;font-size:1.0625rem}
+img{max-width:100%;display:block}
+a{color:var(--turq)}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;color:var(--blue);letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,7vw,3.8rem);color:#fff}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem)}
+h3{font-size:1.2rem}
+p{margin:0 0 1em}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:4.5rem 0}
+.alt{background:var(--sea-light)}
+.dark{background:var(--sunset);color:#e8eef4}
+.dark h2,.dark h3{color:#fff}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.lead{color:var(--muted);max-width:60ch;font-size:1.1rem}
+.dark .lead{color:#b9c7d6}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--blue);padding:.6rem 1rem;z-index:100}
+.skip:focus{left:.5rem;top:.5rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* Header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(250,248,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+.brand{font-weight:800;color:var(--blue);text-decoration:none;font-size:1.15rem;letter-spacing:.01em}
+.brand span{color:var(--gold)}
+nav.menu{display:none;gap:1.4rem}
+nav.menu a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+nav.menu a:hover{color:var(--turq)}
+@media(min-width:820px){nav.menu{display:flex}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;font-size:1rem;font-family:inherit;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;min-height:48px}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#b45f04}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+.btn-line{background:transparent;color:var(--blue);border-color:var(--blue)}
+.btn-wa{background:#128C4A;color:#fff}
+.btn-wa:hover{background:#0e7340}
+.btn-sm{padding:.55rem 1rem;min-height:40px;font-size:.92rem}
+
+/* Hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;padding:5rem 0 4rem;background:linear-gradient(160deg,#0B3B60 0%,#0284C7 55%,#D97706 130%);overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,59,96,.55) 0%,rgba(11,59,96,.35) 45%,rgba(15,30,46,.75) 100%)}
+.hero .wrap{position:relative;z-index:2}
+.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.45);padding:.45rem 1rem;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.06em;margin-bottom:1.4rem;backdrop-filter:blur(4px)}
+.hero h1{max-width:18ch;text-shadow:0 2px 20px rgba(0,0,0,.35)}
+.hero .sub{font-size:clamp(1.05rem,2.6vw,1.3rem);max-width:56ch;font-style:italic;margin:1rem 0 2rem;color:#f4f8fb}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+
+/* Gallery */
+.grid{display:grid;gap:1.4rem;margin-top:2.2rem}
+.gallery{grid-template-columns:1fr}
+@media(min-width:640px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.gallery{grid-template-columns:repeat(6,1fr)}.gallery .card:nth-child(-n+2){grid-column:span 3}.gallery .card:nth-child(n+3){grid-column:span 2}}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;margin:0}
+.ph{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#bfe3f2,#F0F7FA 50%,#fbe3bf);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.05)}
+.ph .fb{display:none;font-size:3.2rem}
+.ph.nofoto img{display:none}
+.ph.nofoto .fb{display:block}
+.card .txt{padding:1.2rem 1.3rem 1.5rem}
+.card h3{margin-bottom:.4rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* Services */
+.services{grid-template-columns:1fr}
+@media(min-width:620px){.services{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.services{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--sand);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
+.svc .ic{font-size:2.2rem;display:block;margin-bottom:.6rem}
+.svc p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* Sunset */
+.sunset-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:860px){.sunset-grid{grid-template-columns:1.1fr .9fr}}
+.sunset-list{list-style:none;padding:0;margin:1.2rem 0 1.8rem;display:grid;gap:.6rem}
+.sunset-list li{padding-left:1.8rem;position:relative}
+.sunset-list li::before{content:"🍹";position:absolute;left:0}
+.sun{aspect-ratio:1/1;max-width:360px;margin-inline:auto;border-radius:50%;background:radial-gradient(circle at 50% 60%,#fbbf24 0 22%,#D97706 23% 38%,rgba(217,119,6,.25) 39% 60%,transparent 61%);display:flex;align-items:flex-end;justify-content:center;width:100%}
+.sun span{margin-bottom:12%;font-weight:800;letter-spacing:.2em;font-size:.9rem;color:#fff}
+
+/* Booking */
+.book{background:#fff;border-radius:24px;box-shadow:var(--shadow);padding:1.6rem;max-width:760px;margin:2rem auto 0;border:1px solid var(--line)}
+@media(min-width:640px){.book{padding:2.2rem}}
+.steps{display:flex;gap:.5rem;margin-bottom:1.6rem}
+.dot{flex:1;height:6px;border-radius:6px;background:var(--line)}
+.dot.on{background:var(--gold)}
+.step{display:none}
+.step.show{display:block}
+.step h3{margin-bottom:1rem}
+.opts{display:grid;gap:.8rem}
+@media(min-width:560px){.opts{grid-template-columns:1fr 1fr}}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;cursor:pointer;margin:0}
+.opt label{display:block;border:2px solid var(--line);border-radius:14px;padding:1rem 1.1rem;font-weight:600;background:var(--sand);transition:.15s}
+.opt input:checked + label{border-color:var(--gold);background:#fff7ea;box-shadow:0 0 0 3px rgba(217,119,6,.18)}
+.opt input:focus-visible + label{outline:3px solid var(--turq);outline-offset:2px}
+.field{margin-bottom:1rem}
+.field label.t{display:block;font-weight:700;font-size:.92rem;margin-bottom:.35rem;color:var(--blue)}
+.field input[type=text],.field input[type=date],.field select,.field textarea{width:100%;padding:.8rem .9rem;border:2px solid var(--line);border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--turq)}
+.two{display:grid;gap:1rem}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.check{display:flex;gap:.7rem;align-items:flex-start;font-size:.93rem;color:var(--muted);margin:1rem 0}
+.check input{margin-top:.3rem;width:20px;height:20px;flex:none}
+.nav{display:flex;justify-content:space-between;gap:.8rem;margin-top:1.4rem;flex-wrap:wrap}
+.err{color:#b91c1c;font-weight:600;font-size:.92rem;min-height:1.3em;margin:.6rem 0 0}
+.send{display:grid;gap:.7rem}
+.preview{background:var(--sea-light);border-left:4px solid var(--turq);padding:1rem 1.1rem;border-radius:10px;font-size:.95rem;white-space:pre-wrap;color:var(--ink);margin-top:1rem}
+
+/* Contacts */
+.contact-grid{display:grid;gap:2rem;margin-top:2rem}
+@media(min-width:860px){.contact-grid{grid-template-columns:.9fr 1.1fr}}
+.cbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
+.cbox ul{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.cbox strong{display:block;color:var(--blue);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+.map{border-radius:var(--radius);overflow:hidden;background:linear-gradient(135deg,#d6ecf7,#fbe9cd);min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center;padding:1.5rem;position:relative;border:1px solid var(--line)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map .in{display:grid;gap:.8rem;justify-items:center}
+.row{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.2rem}
+
+/* Privacy */
+.privacy{font-size:.95rem;color:var(--muted)}
+.privacy h3{color:var(--blue);margin-top:1.4rem;font-size:1.05rem}
+details.pv{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.4rem;margin-top:1.5rem}
+details.pv summary{font-weight:700;color:var(--blue);cursor:pointer;font-size:1.05rem}
+
+footer{background:var(--sunset);color:#b9c7d6;padding:2.2rem 0;font-size:.92rem;text-align:center}
+footer a{color:#fff}
+
+.float-wa{position:fixed;right:1rem;bottom:1rem;z-index:60;background:#128C4A;color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.2rem;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.28);display:inline-flex;gap:.5rem;align-items:center}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Bagni <span>La Baia</span></a>
+    <nav class="menu" aria-label="Navigazione principale">
+      <a href="#spiaggia">Spiaggia</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#tramonto">Tramonto</a>
+      <a href="#prenota">Prenota</a>
+      <a href="#dove">Dove siamo</a>
+    </nav>
+    <a class="btn btn-gold btn-sm" href="#prenota">Prenota</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <img class="bg" src="img/spiaggia.jpg?v=1" alt="Spiaggia attrezzata e gazebo con tende bianche ai Bagni La Baia di Fano" fetchpriority="high" decoding="async">
+  <div class="wrap">
+    <span class="badge">FANO (PU) · VIA ALCIDE DE GASPERI, 33 · APERTI TUTTI I GIORNI 08:00 – 20:00</span>
+    <h1>Bagni La Baia – Dove il sole incontra il mare a Fano.</h1>
+    <p class="sub">Spiaggia attrezzata, gazebo con tende bianche, ristorantino di pesce vista mare e aperitivi al tramonto nella cornice della spiaggia di ciottoli di Fano.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#prenota">Prenota Ombrellone o Lettone</a>
+      <a class="btn btn-ghost" href="#servizi">Scopri Spiaggia &amp; Ristorantino</a>
+      <a class="btn btn-wa" href="https://wa.me/393389789122" target="_blank" rel="noopener">Chiama / WhatsApp (338 978 9122)</a>
+    </div>
+  </div>
+</section>
+
+<section id="spiaggia" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Il nostro angolo di Adriatico</span>
+    <h2>La spiaggia, il ristorantino &amp; il tramonto</h2>
+    <p class="lead">Tutto quello che serve per una giornata perfetta: mare limpido, comfort, buona cucina e una serata che profuma d'estate.</p>
+    <div class="grid gallery">
+      <figure class="card">
+        <div class="ph"><img src="img/mare.jpg?v=1" alt="Acque cristalline e spiaggia di ciottoli ai Bagni La Baia" loading="lazy" decoding="async"><span class="fb" aria-hidden="true">🌊</span></div>
+        <figcaption class="txt"><h3>Acque Cristalline &amp; Spiaggia di Ciottoli</h3><p>Mare pulito e protetto dalle scogliere, ideale per nuotare e rilassarsi senza sabbia.</p></figcaption>
+      </figure>
+      <figure class="card">
+        <div class="ph"><img src="img/gazebo.jpg?v=1" alt="Lettoni maxi e gazebo privati con tende bianche" loading="lazy" decoding="async"><span class="fb" aria-hidden="true">🛏️</span></div>
+        <figcaption class="txt"><h3>Lettoni Maxi &amp; Gazebo Privati</h3><p>Postazioni spaziose in legno con tende bianche per il massimo comfort e privacy.</p></figcaption>
+      </figure>
+      <figure class="card">
+        <div class="ph"><img src="img/spiaggia.jpg?v=1" alt="Ombrelloni e area relax dello stabilimento" loading="lazy" decoding="async"><span class="fb" aria-hidden="true">🏖️</span></div>
+        <figcaption class="txt"><h3>Ombrelloni &amp; Relax per Tutti</h3><p>File ben distanziate, camminamenti comodi, cabine, docce calde/fredde e noleggio canoe.</p></figcaption>
+      </figure>
+      <figure class="card">
+        <div class="ph"><img src="img/ristorante.jpg?v=1" alt="Ristorantino di pesce con vista mare" loading="lazy" decoding="async"><span class="fb" aria-hidden="true">🍝</span></div>
+        <figcaption class="txt"><h3>Ristorantino di Pesce Vista Mare</h3><p>Primi piatti allo scoglio, fritti dorati, insalate estive e proposte fresche da gustare a pranzo.</p></figcaption>
+      </figure>
+      <figure class="card">
+        <div class="ph"><img src="img/tramonto.jpg?v=1" alt="Sunset beach e aperitivo al tramonto con luci della terrazza" loading="lazy" decoding="async"><span class="fb" aria-hidden="true">🌅</span></div>
+        <figcaption class="txt"><h3>Sunset Beach &amp; Aperitivi al Tramonto</h3><p>Cocktail, musica, serate a tema (paella, DJ set) e atmosfera suggestiva sotto le luci della terrazza.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="servizi">
+  <div class="wrap">
+    <span class="eyebrow">Tutto incluso</span>
+    <h2>Servizi &amp; accessibilità</h2>
+    <p class="lead">Un lido pensato per famiglie, coppie e gruppi di amici, accessibile a tutti.</p>
+    <div class="grid services">
+      <div class="svc"><span class="ic" aria-hidden="true">🏖️</span><h3>Ombrelloni, Lettini &amp; Gazebo Maxi</h3><p>Soluzioni giornaliere o stagionali, dalla postazione classica al gazebo con lettone.</p></div>
+      <div class="svc"><span class="ic" aria-hidden="true">🍝</span><h3>Bar &amp; Ristorantino di Pesce</h3><p>Colazioni, pranzi e aperitivi, con cucina di mare e vista sulla spiaggia.</p></div>
+      <div class="svc"><span class="ic" aria-hidden="true">🛶</span><h3>Sport &amp; Divertimento</h3><p>Noleggio canoe, ping pong, biliardo, biliardino e animazione per bambini.</p></div>
+      <div class="svc"><span class="ic" aria-hidden="true">♿</span><h3>Accessibilità Totale</h3><p>Ingresso e parcheggio accessibili in sedia a rotelle, camminamenti in spiaggia.</p></div>
+      <div class="svc"><span class="ic" aria-hidden="true">💳</span><h3>Pagamenti Comodi</h3><p>Carte di credito, bancomat e pagamenti mobile NFC.</p></div>
+      <div class="svc"><span class="ic" aria-hidden="true">⏰</span><h3>Orari Estivi</h3><p>Tutti i giorni, dal Lunedì alla Domenica: <strong>08:00 – 20:00</strong>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tramonto" class="dark">
+  <div class="wrap sunset-grid">
+    <div>
+      <span class="eyebrow">Sunset Lounge</span>
+      <h2>Quando il sole scende, la spiaggia si accende.</h2>
+      <p class="lead">Dopo una giornata di mare, fermati per l'ora più bella: luci calde, musica e un calice in mano.</p>
+      <ul class="sunset-list">
+        <li>Cocktail e aperitivi con vista sul tramonto</li>
+        <li>Serate a tema: paella, DJ set e musica dal vivo</li>
+        <li>Atmosfera rilassata sotto le luci della terrazza</li>
+      </ul>
+      <a class="btn btn-gold" href="#prenota">Prenota il tuo aperitivo</a>
+    </div>
+    <div class="sun" role="img" aria-label="Sole che tramonta sul mare"><span>SUNSET</span></div>
+  </div>
+</section>
+
+<section id="prenota" class="alt">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Prenotazione rapida</span>
+      <h2>Prenota in 3 passaggi su WhatsApp</h2>
+      <p class="lead">Compila i dati: ti prepariamo il messaggio già pronto. Nessun dato viene inviato ai nostri server: resta sul tuo dispositivo fino a quando tocchi “Invia”.</p>
+    </div>
+
+    <div class="book" id="book">
+      <div class="steps" aria-hidden="true"><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
+
+      <div class="step show" data-step="1">
+        <h3>1 · Cosa vuoi prenotare?</h3>
+        <div class="opts" role="radiogroup" aria-label="Tipo di prenotazione">
+          <div class="opt"><input type="radio" name="tipo" id="t1" value="Ombrellone + 2 Lettini" checked><label for="t1">🏖️ Ombrellone + 2 Lettini</label></div>
+          <div class="opt"><input type="radio" name="tipo" id="t2" value="Gazebo / Lettone Maxi"><label for="t2">🛏️ Gazebo / Lettone Maxi</label></div>
+          <div class="opt"><input type="radio" name="tipo" id="t3" value="Tavolo al Ristorantino"><label for="t3">🍽️ Tavolo al Ristorantino</label></div>
+          <div class="opt"><input type="radio" name="tipo" id="t4" value="Aperitivo / Serata Tramonto"><label for="t4">🍹 Aperitivo / Serata Tramonto</label></div>
+        </div>
+        <div class="nav"><span></span><button type="button" class="btn btn-blue" data-next>Avanti →</button></div>
+      </div>
+
+      <div class="step" data-step="2">
+        <h3>2 · Data e persone</h3>
+        <div class="two">
+          <div class="field"><label class="t" for="data">Data</label><input type="date" id="data"></div>
+          <div class="field"><label class="t" for="ospiti">Numero ospiti</label>
+            <select id="ospiti"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+        </div>
+        <div class="field"><label class="t" for="pref">Preferenza</label>
+          <select id="pref"><option>Prima fila</option><option>Seconda fila</option><option>Area Gazebo</option><option>Pranzo</option><option>Tramonto / Aperitivo</option></select></div>
+        <p class="err" id="err2" role="alert"></p>
+        <div class="nav"><button type="button" class="btn btn-line" data-prev>← Indietro</button><button type="button" class="btn btn-blue" data-next>Avanti →</button></div>
+      </div>
+
+      <div class="step" data-step="3">
+        <h3>3 · Nome, note e invio</h3>
+        <div class="field"><label class="t" for="nome">Il tuo nome</label><input type="text" id="nome" autocomplete="name" maxlength="60"></div>
+        <div class="field"><label class="t" for="note">Note (facoltative)</label><textarea id="note" rows="3" maxlength="300" placeholder="Es. bambini, richieste particolari, allergie…"></textarea></div>
+        <div class="check"><input type="checkbox" id="priv"><label for="priv">Ho letto l'<a href="#privacy">informativa privacy</a> e acconsento all'uso dei dati inseriti solo per preparare il messaggio WhatsApp.</label></div>
+        <p class="err" id="err3" role="alert"></p>
+        <div class="send">
+          <button type="button" class="btn btn-wa" id="sendMain">📲 Invia Richiesta su WhatsApp (338 978 9122)</button>
+          <button type="button" class="btn btn-line" id="sendAlt">Oppure invia al secondo numero (340 103 2875)</button>
+        </div>
+        <div class="preview" id="preview" hidden></div>
+        <div class="nav"><button type="button" class="btn btn-line" data-prev>← Indietro</button><span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dove">
+  <div class="wrap">
+    <span class="eyebrow">Vieni a trovarci</span>
+    <h2>Dove siamo &amp; contatti</h2>
+    <div class="contact-grid">
+      <div class="cbox">
+        <ul>
+          <li><strong>Indirizzo</strong>Via Alcide De Gasperi, 33 – 61032 Fano (PU)</li>
+          <li><strong>Telefono &amp; WhatsApp</strong><a href="tel:+393389789122">338 978 9122</a> · <a href="tel:+393401032875">340 103 2875</a></li>
+          <li><strong>Email</strong><a href="mailto:infobagnilabaia@gmail.com">infobagnilabaia@gmail.com</a></li>
+          <li><strong>Orari</strong>Tutti i giorni, 08:00 – 20:00</li>
+          <li><strong>Social</strong><a href="https://www.instagram.com/labaia_sunset_beach/" target="_blank" rel="noopener">Instagram @labaia_sunset_beach</a><br><a href="https://www.facebook.com/search/top?q=Bagni%20La%20Baia%20Fano" target="_blank" rel="noopener">Facebook Bagni La Baia</a></li>
+        </ul>
+        <div class="row">
+          <a class="btn btn-wa btn-sm" href="https://wa.me/393389789122" target="_blank" rel="noopener">WhatsApp 338 978 9122</a>
+          <a class="btn btn-line btn-sm" href="https://wa.me/393401032875" target="_blank" rel="noopener">WhatsApp 340 103 2875</a>
+        </div>
+      </div>
+      <div>
+        <div class="map" id="map">
+          <div class="in">
+            <p><strong>La mappa di Google si carica solo se lo vuoi.</strong><br>Cliccando acconsenti al caricamento di contenuti da Google.</p>
+            <button type="button" class="btn btn-blue" id="loadMap">📍 Mostra la mappa</button>
+          </div>
+        </div>
+        <div class="row"><a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Alcide+De+Gasperi+33%2C+61032+Fano+PU" target="_blank" rel="noopener">Apri su Google Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="alt privacy">
+  <div class="wrap">
+    <h2>Informativa Privacy (GDPR)</h2>
+    <p>Questo sito è pensato per rispettare la tua privacy: <strong>non usa cookie di profilazione né strumenti di tracciamento</strong>.</p>
+    <details class="pv">
+      <summary>Leggi l'informativa completa</summary>
+      <h3>1. Titolare del trattamento</h3>
+      <p>Bagni La Baia, Via Alcide De Gasperi, 33 – 61032 Fano (PU). Email: infobagnilabaia@gmail.com. Tel. 338 978 9122.</p>
+      <h3>2. Dati trattati e finalità</h3>
+      <p>Nel configuratore di prenotazione puoi inserire nome, data, numero di ospiti, preferenze e note. Questi dati sono elaborati <strong>esclusivamente sul tuo dispositivo</strong> dal browser per comporre il testo del messaggio WhatsApp. Il sito non li invia ad alcun server e non li memorizza (nessun cookie, localStorage o database).</p>
+      <h3>3. Invio tramite WhatsApp</h3>
+      <p>Quando premi “Invia Richiesta su WhatsApp” sei reindirizzato a WhatsApp (Meta Platforms), che tratta i dati secondo la propria informativa. Il messaggio arriva a noi solo se decidi tu di inviarlo. Useremo i dati unicamente per rispondere alla tua richiesta di prenotazione.</p>
+      <h3>4. Base giuridica</h3>
+      <p>Consenso (art. 6.1.a GDPR) per la preparazione del messaggio e misure precontrattuali su tua richiesta (art. 6.1.b) per la gestione della prenotazione.</p>
+      <h3>5. Mappa Google</h3>
+      <p>La mappa di Google Maps viene caricata <strong>solo dopo il tuo clic</strong> sul pulsante dedicato. Dal momento del caricamento Google può raccogliere dati secondo la propria informativa (policies.google.com/privacy). Il link “Apri su Google Maps” apre invece un servizio esterno in una nuova scheda.</p>
+      <h3>6. Cookie</h3>
+      <p>Il sito non utilizza cookie di profilazione né cookie di terze parti per finalità di marketing. Non è richiesto alcun banner di consenso per il solo uso del sito.</p>
+      <h3>7. Conservazione</h3>
+      <p>Il sito non conserva alcun dato. Le conversazioni WhatsApp ricevute sono conservate per il tempo necessario a gestire la prenotazione e per eventuali obblighi di legge.</p>
+      <h3>8. I tuoi diritti</h3>
+      <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati (artt. 15–22 GDPR) scrivendo a infobagnilabaia@gmail.com. Puoi inoltre proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it).</p>
+      <h3>9. Sicurezza</h3>
+      <p>Il sito applica una Content Security Policy restrittiva, non carica script o font da CDN esterne e limita le risorse di terze parti a quelle strettamente necessarie.</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="y">2026</span> Bagni La Baia · Via Alcide De Gasperi, 33 – 61032 Fano (PU)</p>
+    <p><a href="#privacy">Privacy</a> · <a href="https://www.instagram.com/labaia_sunset_beach/" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:infobagnilabaia@gmail.com">Email</a></p>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/393389789122" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">💬 WhatsApp</a>
+
+<script>
+(function(){
+  "use strict";
+  var $=function(s,c){return (c||document).querySelector(s)};
+  var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+  /* Anno footer */
+  $("#y").textContent=new Date().getFullYear();
+
+  /* Fallback immagini mancanti */
+  $$(".ph img").forEach(function(img){
+    var box=img.parentNode;
+    function bad(){box.classList.add("nofoto")}
+    img.addEventListener("error",bad);
+    if(img.complete && img.naturalWidth===0){bad()}
+  });
+  var hero=$(".hero img.bg");
+  if(hero){
+    var hide=function(){hero.style.display="none"};
+    hero.addEventListener("error",hide);
+    if(hero.complete && hero.naturalWidth===0){hide()}
+  }
+
+  /* Configuratore */
+  var cur=1, steps=$$(".step"), dots=$$(".dot");
+  var dateEl=$("#data");
+  (function(){
+    var d=new Date(), m=String(d.getMonth()+1).padStart(2,"0"), g=String(d.getDate()).padStart(2,"0");
+    var iso=d.getFullYear()+"-"+m+"-"+g;
+    dateEl.min=iso;
+  })();
+
+  function show(n){
+    cur=n;
+    steps.forEach(function(s){s.classList.toggle("show",+s.getAttribute("data-step")===n)});
+    dots.forEach(function(d,i){d.classList.toggle("on",i<n)});
+    $("#book").scrollIntoView({behavior:"smooth",block:"nearest"});
+  }
+  function fmtDate(v){
+    if(!v)return "";
+    var p=v.split("-");
+    return p[2]+"/"+p[1]+"/"+p[0];
+  }
+  function message(){
+    var tipo=$("input[name=tipo]:checked").value;
+    var l=[
+      "Ciao Bagni La Baia! 👋",
+      "Vorrei richiedere: "+tipo,
+      "📅 Data: "+fmtDate(dateEl.value),
+      "👥 Ospiti: "+$("#ospiti").value,
+      "⭐ Preferenza: "+$("#pref").value,
+      "🙋 Nome: "+$("#nome").value.trim()
+    ];
+    var note=$("#note").value.trim();
+    if(note)l.push("📝 Note: "+note);
+    l.push("Grazie, attendo conferma disponibilità.");
+    return l.join("\n");
+  }
+
+  $$("[data-next]").forEach(function(b){
+    b.addEventListener("click",function(){
+      if(cur===2){
+        if(!dateEl.value){$("#err2").textContent="Scegli una data per continuare.";dateEl.focus();return}
+        $("#err2").textContent="";
+      }
+      show(Math.min(3,cur+1));
+    });
+  });
+  $$("[data-prev]").forEach(function(b){
+    b.addEventListener("click",function(){show(Math.max(1,cur-1))});
+  });
+
+  function send(num){
+    var err=$("#err3");
+    if(!$("#nome").value.trim()){err.textContent="Inserisci il tuo nome.";$("#nome").focus();return}
+    if(!$("#priv").checked){err.textContent="Per procedere accetta l'informativa privacy.";$("#priv").focus();return}
+    err.textContent="";
+    var txt=message();
+    var pv=$("#preview");
+    pv.hidden=false;
+    pv.textContent=txt;
+    var url="https://wa.me/"+num+"?text="+encodeURIComponent(txt);
+    var w=window.open(url,"_blank","noopener");
+    if(!w){window.location.href=url}
+  }
+  $("#sendMain").addEventListener("click",function(){send("393389789122")});
+  $("#sendAlt").addEventListener("click",function(){send("393401032875")});
+
+  /* Mappa al clic */
+  $("#loadMap").addEventListener("click",function(){
+    var m=$("#map");
+    m.textContent="";
+    var f=document.createElement("iframe");
+    f.src="https://www.google.com/maps?q="+encodeURIComponent("Via Alcide De Gasperi 33, 61032 Fano PU")+"&output=embed";
+    f.title="Mappa Bagni La Baia – Via Alcide De Gasperi 33, Fano";
+    f.loading="lazy";
+    f.referrerPolicy="no-referrer-when-downgrade";
+    m.appendChild(f);
+  });
+})();
+</script>
+</body>
+</html>
